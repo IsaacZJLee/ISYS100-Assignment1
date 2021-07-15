@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<!--Title of the tab-->
+		<title>Welcome to PC Build</title>
+        
+        <!--Preferred encoding for email and webpages-->
+        <meta charset="utf-8">
+        
+        <!--Picture on the tab-->
+        <link rel="shortcut icon" href="resources/icons/pctab.png"/>
+        
+        <!--CSS Style Sheet-->
+        <link href="cssstyle.css" rel="stylesheet">
+        
+        <style>
+			div.jkcubeslideshow{ /* main container */
+	background: white;
+	display: block;
+	width: 450px; /* default width of main container */
+	height: 1000px; /* default height of main container */
+	position: relative;
+	-webkit-perspective: 1000px; /* Greater the value, less pronounced the 3D effect */
+	perspective: 1000px; /* Greater the value, less pronounced the 3D effect */
+	;
+				}
+
+			div.side1, div.side2 { /* two panels that make up cube effect */
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				backface-visibility: hidden; /* hide backface of DIVs */
+				transition: all 1s ease-in-out; /* CSS transition. Actual duration set by script */;
+				}
+
+			div.side1 img, div.side2 img { /* how should slideshow images be sized inside panels? */
+				width: 100%;
+				height: auto;
+				}
+		</style>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="jkcubeslideshow.js">
+
+		/* =====================================
+		 ** 3D Cube Slideshow- by JavaScript Kit (www.javascriptkit.com)
+		 ** Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+			===================================== */
+
+		</script>
+	</head>
+
+	<body>
+    <div id="BORDER">
+    <a id="HOME"></a>
+    <div id="wrapper">
+    <a id="HOME3"><h1>Do & Don't</h1></a>
+    	<!--Navigation Bar-->
+		<nav>
+        	<b>
+            	<a href="index.html">Home</a> | <a href="mypage1.html">Beginner Guide</a> | <a href="mypage2.html">Do & Don't</a>
+        	</b>
+        </nav>
+        
+        <script>
+			var cubeshowvar1 // arbitrary but unique variable to store slideshow instance
+			<!--Images are based from reference: https://www.xtremegaminerd.com/common-mistakes-newbies-make-building-a-pc/-->
+			jQuery(function($){
+				cubeshowvar1 = new jkcubeslideshow({
+				id: 'cubeshow1',
+				dimensions: [300, 375],
+				images: [
+							['cable.jpg'],
+							['cpusocketlatch.jpg'],
+							['touchpcb.jpg'],
+							['usingknife.jpg'] //<-- no comma after last image
+						] //<-- no comma after last setting
+						})
+				})
+
+		</script>
+        <div id="container2">
+        <p><div class="jkcubeslideshow" id="cubeshow1"></div>
+		</br>
+		<a href="#" onClick="cubeshowvar1.rotatecube('back'); return false">  Back</a> <a href="#" onClick="cubeshowvar1.rotatecube('forward'); return false" style="margin-left:160px">Forward </a></p>
+        </div>
+        
+        <!--Reference: https://www.tomshardware.com/reviews/pc-building-tips-beginners,5816.html-->
+        <div id="container">
+        	<p>Building your own PC is a thrilling way to get a deeper understanding of how computers work. Not only is it an economical approach to getting a desktop custom-made for your exact needs and wants, but it allows you to get your hands dirty (figuratively, of course) and take true ownership of something you’ll use every day. You’ll finish the project with a sense of pride and a loyal connection to your creation.</br></br>Joining the build community seems like great idea...until you realize how intimidating it can be. You’ve learned about all the necessary components and peripherals and are ready to invest time and money. But then you’re hit with a wave of uncertainty. How hard is this going to be? Will you really end up with a functioning PC in the end?</br></br>Approaching your first PC build with a calm, optimistic and eager mindset will help things go smoothly. If you’re not sure on the process for building a PC, check out our how-to guide with step-by-step instructions. To help, we’ve also created this list of beginner’s tips.</p>
+        </div>
+        <div id="container">
+        	<ol>
+        		<li><strong>Before you do anything, determine the purpose of your build.</strong></li>
+            <p>What’s the reason you’re making this PC? Is it because you want the ultimate gaming machine? Are you looking for something that can handle your creative work, or just want a build that can manage common web browsing? Or do you want a machine that’s as flashy as a nightclub? Maybe it’s a combination of these. In any case, your motivations will influence your decisions when shopping for components.</p>
+
+        		<li><strong>Pick a side: Intel or AMD.</strong></li>
+            <p>Do your research on which CPU has the power and specs you need for your dream build. The CPU will be the core of your PC, so your selection is a very important decision. But it’s not the only component in your computer, so don’t blow your entire budget on it.</br></br>In short, you can’t wrong with either brand, but which model you choose will determine what kind of motherboard you can get. For help selecting a CPU, make sure to check out our CPU buying guide and our best picks for gaming and performance. Our CPU Hierarchy ranks all current chips from fastest to slowest. The video below also features some quick tips for CPU shopping.</p>
+            
+            	<li><strong>Consider a cooler with thermal paste included.</strong></li>
+            <p>Using thermal paste can be a messy ordeal, especially for first-time builders. It also adds an extra step to the process. If you'd like to simplify things, opt for a cooler that offers pre-applied thermal paste.</p>
+            
+            <li><strong>Make sure all the components you buy are compatible with one another…and your budget.</strong></li>
+            <p>Components come in many different flavors from various vendors, and not all of them play well together. For example, you will hit a roadblock if you find out your motherboard doesn’t have the right type of socket for your CPU or an M.2 slot for your speedy SSD.</br></br>Make sure you’re building a PC symphony comprised of components that perform together harmoniously, not a discordant, mismatched group of parts that literally won’t play a thing. Again, there are resources to help guide you to the right choices, including our motherboard, SSD and PSU buying guides.</p>
+            
+            <li><strong>Open each component carefully.</strong></li>
+            <p>Components are fragile and can break before you even install them. Ripping open the packaging on your CPU can lead to bent pins, as an example, and any damaged component may very well result in a non-functioning build.</p>
+            
+            <li><strong>No socks on a carpet.</strong></li>
+            <p>Beware of static electricity. A static discharge can destroy expensive components. To be safe in high-static environments, you can use an anti-static wrist strap or simply touch a metal object that’s not part of the computer before you begin work.</p>
+            
+            <li><strong>Keep the Band-Aids close..</strong></li>
+            <p>Some cheaper cases have sharp edges, which mean it's possible to cut yourself. Consider it a badge of honor, but keep the first-aid kit nearby.</p>
+            
+            <li><strong>Get your toolkit in order.</strong></li>
+            <p>You don't want to have to hold off on starting your build because you forgot to get the tools you need. You can get by with a mid-sized Phillips head screwdriver, but we also recommend getting a tool kit that has a three-pronged parts retriever that you can use to rescue screws that fall into the case. Pliers can also come in handy for stubborn screws or bolts.</p>
+            
+            <li><strong>Make sure you have an appropriate workspace.</strong></li>
+            <p>Building goes more smoothly when you're backed by good lighting or a flashlight to get visibility into the dark, narrow corners of your build. It's also helpful to have a table large enough for laying out all your components.</br></br>You also need to be comfortable. For a recent build we did at Tom's Hardware, we worked on a table that's relatively high, so we stood on a box for extra height, allowing us to reach into the case for long periods without straining our arms.</p>
+            
+            <li><strong>Long fingernails can be helpful.</strong></li>
+            <p>Like with many things that require dexterity, longer nails come in handy. In a PC build, a lengthy manicure can be useful for prying things open, using as pseudo-fingers in tight spaces or holding teeny tiny screws.</p>
+            
+            <li><strong>Long hair is not helpful.</strong></li>
+            <p>Tie that mane up to prevent it from getting in your eyes, blocking any lighting or making you too hot – yes, you may work up a light sweat on your first build!</p>
+            
+            <li><strong>Keep, or better yet, read the instructions.</strong></li>
+            <p>You may think you know what you're doing, but different parts come with unique features and set-ups. Reading the instructions beforehand can save you a lot of guesswork, and looking things up in a manual can help you solve any problems you may encounter.</p>
+            
+            <li><strong>Many parts click when installed properly.</strong></li>
+            <p>If you don't hear or feel a satisfying click when implementing a cable or installing your RAM, for example, your component may not be in all the way.</p>
+            
+            <li><strong>Don't jam anything!</strong>
+              <p>As mentioned earlier, components are fragile and can be bent or broken by haphazard handling. If a piece isn't fitting where you think it's "supposed to," that may be because you're installing it wrong, not because you're failing to shove it in aggressively enough. If you're certain you're inserting the right part into the proper spot but it's not fitting correctly, try rotating the component.</p>
+            
+            </li><li><strong>Try to keep the cables neat as you're building.</strong></li>
+            <p>Eventually you'll have a bunch of cables in there, which can make it hard to see around the case or motherboard. Also, when you're done, your build will look a lot sleeker, professional and impressive if your cables are neat and orderly. You can always fix this later, but who wants to take two steps backwards to get one step forward? Keep your cables neat by carefully untangling them beforehand and adding them to the build while vigilantly avoiding interweaving with cables already in place. You can also use zip ties to group installed cables together and give you more space in the case.</p>
+            
+            <li><strong>Be patient with the I/O backplate.</strong></li>
+            <p>Installing the I/O backplate can be a frustrating process. You need to make sure it is flushed against the case; it will likely making a clicking noise when in properly. Use two fingers to cover the length of the backplate, and push it in while eyeing the outside of the case to ensure proper alignment. Extend two fingers to two diagonally opposite corners. Pop those corners in before moving over to the next corners. Run your fingers along the backplate’s perimeter to make sure it’s in all the way.</p>
+            
+            <li><strong>Don’t forget to flip the switch on your power supply.</strong></li>
+            <p>While you probably won’t forget that your PC needs a power supply, it can be easy for you to overlook flipping the on switch after it’s installed.</p>
+            
+            <li><strong>BMake sure all your peripherals work beforehand.</strong></li>
+            <p>It’s real anticlimactic to spend hours on a build just to hit power and see nothing happen, as will be the case if you try to pair it with a non-functioning monitor. And while the PC will boot even if the keyboard or mouse is bad, it won’t be much use to you. You definitely don’t want to disassemble your build piece by piece when all you needed was a different peripheral to get things going.</p>
+            
+            <li><strong>Prepare an OS install disk</strong></li>
+            <p>As soon as your computer is built and powers on, the first thing you need to do is install Windows or Linux. Prepare a USB boot drive in advance.</p>
+            
+             <li><strong>Use the enthusiast community.</strong></li>
+            <p>Whether that means asking a friend who’s a more expert builder, or hitting up reliable and informative online forums, like the Tom’s Hardware community, you can learn a lot from tech enthusiasts or just get some great ideas for your build. These resources are especially helpful when troubleshooting or if you get stuck. You’re never alone in the world of PC building!</p>
+            
+             <li><strong>Have fun!</strong></li>
+            <p>Remember, building a PC is supposed to be fun. And while roadblocks or hiccups may appear, frustration doesn’t have to follow. Think of it as a game or creative process; every issue just gives you the opportunity to work on a new strategy or try a different approach.</p>
+            </ol>
+        </div>
+        <!--Navigation Bar-->
+        <nav>
+        	<b>
+            	<a href="index.html">Homepage</a> | <a href="#HOME3">TOP</a> | <a href="mypage1.html">Beginner Guide</a>
+        	</b>
+        </nav>
+<footer>Copyright &copy; 45526249@Macquarie University (2019). Assignment 1. All Rights Reserved.</footer>
+        </div>
+        </div>
+</body>
+</html>
